@@ -14,14 +14,11 @@ import UIKit
 }
 
 public protocol DSRollScrollViewDataSource: NSObjectProtocol {
-    //
+
     func numberOfItems() -> Int
     func textForItem(_ item: Int) -> String
 }
 
-/**
- * A replacement for UIRollCircleView
- */
 public class DSRollScrollView: UIView {
 
     var timer: Timer?
